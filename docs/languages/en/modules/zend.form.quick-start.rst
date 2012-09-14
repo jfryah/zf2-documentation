@@ -73,7 +73,7 @@ If nothing else, you can simply start creating elements, fieldsets, and forms an
    $form->add($message);
    $form->add($captcha);
    $form->add($csrf);
-   $form->add($send);
+   $form->add($submit);
 
    $nameInput = new Input('name');
    // configure input... and all others
@@ -101,7 +101,7 @@ information, and another for the message details.
    $form->add($details);
    $form->add($captcha);
    $form->add($csrf);
-   $form->add($send);
+   $form->add($submit);
 
 Regardles of approach, as you can see, this can be tedious.
 
