@@ -385,7 +385,7 @@ defining a form for re-use in your application.
                'attributes' => array(
                    'captcha' => $this->captcha,
                ),
-           )),
+           ));
            $this->add(new Element\Csrf('security'));
            $this->add(array(
                'name' => 'send',
@@ -400,7 +400,7 @@ defining a form for re-use in your application.
            // We could also define the input filter here, or
            // lazy-create it in the getInputFilter() method.
        }
-   ));
+   }
 
 You'll note that this example introduces a method, ``prepareElements()``. This is done to allow altering and/or
 configuring either the form or input filter factory instances, which could then have bearing on how elements,
